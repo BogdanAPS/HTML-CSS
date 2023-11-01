@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ptz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+	<link rel="stylesheet" href="./js/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="./js/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--popup block-->
+    <div id="newsletter" class="popup-wrapper popup__closse">
+      <div class="popup-inner">
+        <span class="popup-close">&times;</span>
+        <div class="subscribe-image">
+          <img src="./images/pult.jpg" class="img-fluid">
+        </div>
+        <div class="subscribe-content">
+          <h2 class="">Для замовлення</h2>
+          <p>Напишіть Ваш номер телефону, менеджер з вами зв'яжиться</p>
+          <div class="form-group subscribe-form-group">
+            <form class="">
+              <input class="form-input" type="tel" name="newsletter-tel" id="tel" value="" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13">
+              <button type="submit" class="btn btn-dark" name="subscribe-newsletter" id="Subscribe" data-popup="#thanks-contact"  >Замовити</button>
+              <p><label><input id="forgetMe" type="checkbox" name="forgetMe"> Не показувати це знову</label></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="thanks-contact" class="popup-wrapper">
+      <div class="popup-inner">
+        <span class="popup-close">&times;</span>
+        <div class="contact-image">
+          <img src="./images/perezvon.jpg" alt="Letter"class="img-fluid">
+        </div>
+        <div class="px-20">
+          <h3>Дякую!</h3>
+          <p>Наші менеджери зв'яжуться з вами найближчим часом.</p>
+          <p class="content"></p>
+        </div>
+      </div>
+    </div>
+    <!--end popup block-->
+    <header class="header">
+      <div class="container">
+        <div class="navigate">
+          <nav class="nav__list">
+            <ul class="indent">
+              <li class="nav__list-item">
+                <a class="logo">
+                  <img class="logo__img" src="./images/logotip.png" alt="logo" />
+                </a>
+              </li>
+              <li class="nav__list-item">
+                <div class="list__img">
+                  <img
+                  class="nav__list-img"
+                  src="./images/icon_phone.svg"
+                  alt=""
+                />
+                <a class="nav__list-link link-none" href="tel:+380505333645"
+                  >+380505333645</a
+                >
+                </div>
+              </li>
+              <li class="nav__list-item">
+                <div class="list__img">
+                  <img
+                  class="nav__list-img"
+                  src="./images/icon_lang.svg"
+                  alt=""
+                />
+                <a class="nav__list-link link-none" href="#">Виберіть мову</a>
+                </div>
+              </li>
+              <li class="nav__list-item">
+                <div class="list__img">
+                  <img
+                  class="nav__list-img"
+                  src="./images/icon_people.svg"
+                  alt=""
+                />
+                <a class="nav__list-link link-none" href="#">Обліковий запис</a>
+                </div>
+                
+              </li>
+            </ul>
+            <div id="humburger">&equiv;</div>
+            <ul class="nav__list-menu   row">
+              <li class="nav__list-item">
+                <a class="nav__list-link " href="#">Головна</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Наші проекти</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Послуги</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="container__inner">
+          <img class="fon__img" src="./images/fon_zam_posl.png" alt="fon" />
+          <div class="my-40">
+            <button class="konsult__btn btn btn-info btn-large" data-popup="#newsletter" type="button">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</button>
+          </div>
+          <div class="sertifik">
+            <h1 class="title">Сертифікати та ліцензії</h1>
+            <ul class="sertifik__list">
+              <li class="sertifik__list-img">
+                <img src="./images/dozv1.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv1.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv2.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv3.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv4.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv5.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv6.png" alt="photo" />
+              </li>
+              <li class="sertifik__list-img">
+                <img src="./images/dozv7.png" alt="photo" />
+              </li>
+            </ul>
+          </div>
+          <div class="fotogalerey">
+            <h2 class="fotogalerey_title">Фотогалерея робіт</h2>
+            <ul class="fotogalerey__list">
+              <li class="fotogalerey__link">
+                <img src="./images/vognegasn.png" alt="photo" />
+                <p class="fotogalerey__text">Вогнегасники</p>
+              </li>
+              <li class="fotogalerey__link">
+                <img src="./images/proekt.png" alt="photo" />
+                <p class="fotogalerey__text">Проектування</p>
+              </li>
+              <li class="fotogalerey__link">
+                <img src="./images/fire_alarm_large 2.png" alt="photo" />
+                <p class="fotogalerey__text">Пожежна автоматика</p>
+              </li>
+              <li class="fotogalerey__link">
+                <img src="./images/moln.png" alt="photo" />
+                <p class="fotogalerey__text">Блискавкозахист</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="wrap">
+          <div class="footer__inner">
+            <h2 class="footer__title">Контактна інформація:</h2>
+            <ul class="footer__list">
+              <li class="footer__list-props">
+                <img
+                  class="footer__contacts-img"
+                  src="./images/people_contakt.svg"
+                  alt=""
+                />
+                <span>Працюємо пн-пт 8:00 до 17:00</span>
+              </li>
+              <li class="footer__list-props">
+                <img
+                  class="footer__contacts-img"
+                  src="./images/home_contakt.svg"
+                  alt=""
+                />
+                <span> м.Кропивницький вул.Біляєва 2</span>
+              </li>
+              <li class="footer__list-props">
+                <img
+                  class="footer__contacts-img"
+                  src="./images/phone_Vector.svg"
+                  alt=""
+                /><span>+380505333645</span>
+              </li>
+              <li class="footer__list-props">
+                <img
+                  class="footer__contacts-img"
+                  src="./images/mail_contakt.svg"
+                  alt=""
+                /><span>ptz@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="maps">
+            <h2>Карта проїзду</h2>
+            <iframe
+              class="maps__adres"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7476.375922445822!2d32.22260680486998!3d48.5083507302291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3af2bc3d4ea0103!2z0JDQn9ChINCa0LjRgNC-0LLQvtCz0YDQsNC0!5e0!3m2!1sru!2sua!4v1673262819502!5m2!1sru!2sua"
+              width="100"
+              height="100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="footer__social">
+            <h2 class="footer__social-title">Ми в соціальних мережах</h2>
+            <a class="footer__social-link" href="#">
+              <img
+                class="footer__social-img"
+                src="./images/icon_instagram.svg"
+                alt=""
+              />
+            </a>
+            <a class="footer__social-link" href="#">
+              <img
+                class="footer__social-img"
+                src="./images/icon_facebook.svg"
+                alt=""
+              />
+            </a>
+            <a class="footer__social-link" href="#">
+              <img
+                class="footer__social-img"
+                src="./images/icon_twitter.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="footer__text">
+            <h3>
+              © БУДЬ-ЯКЕ ВИКОРИСТАННЯ МАТЕРІАЛІВ ДАНОГО САЙТУ ДОПУСТИМО ТІЛЬКИ З
+              ПИСЬМОВОГО ДОЗВОЛУ КОМПАНІЇ І ПРИ НАЯВНОСТІ АКТИВНОГО ПОСИЛАННЯ НА
+              ОРИГІНАЛЬНИЙ МАТЕРІАЛ.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--	maskedinput JS-file from CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<!--	Owl Carousel JS-file from CDN-->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+	<script src="./js/owl-carousel/owl.carousel.js"></script>
+
+	<script src="./js/sckript.js"></script>
+  </body>
+</html>
