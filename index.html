@@ -2,266 +2,375 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xiaomi</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family= Fira+Sans:wght@500 & family = Inter:wght@400;700 & family= Roboto+Condensed & display=swap"
+      rel="stylesheet"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ptz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
-	<link rel="stylesheet" href="./js/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="./js/owl-carousel/owl.theme.css">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+  
   <body>
-    <!--popup block-->
-    <div id="newsletter" class="popup-wrapper popup__closse">
-      <div class="popup-inner">
-        <span class="popup-close">&times;</span>
-        <div class="subscribe-image">
-          <img src="./images/pult.jpg" class="img-fluid">
-        </div>
-        <div class="subscribe-content">
-          <h2 class="">Для замовлення</h2>
-          <p>Напишіть Ваш номер телефону, менеджер з вами зв'яжиться</p>
-          <div class="form-group subscribe-form-group">
-            <form class="">
-              <input class="form-input" type="tel" name="newsletter-tel" id="tel" value="" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13">
-              <button type="submit" class="btn btn-dark" name="subscribe-newsletter" id="Subscribe" data-popup="#thanks-contact"  >Замовити</button>
-              <p><label><input id="forgetMe" type="checkbox" name="forgetMe"> Не показувати це знову</label></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="thanks-contact" class="popup-wrapper">
-      <div class="popup-inner">
-        <span class="popup-close">&times;</span>
-        <div class="contact-image">
-          <img src="./images/perezvon.jpg" alt="Letter"class="img-fluid">
-        </div>
-        <div class="px-20">
-          <h3>Дякую!</h3>
-          <p>Наші менеджери зв'яжуться з вами найближчим часом.</p>
-          <p class="content"></p>
-        </div>
-      </div>
-    </div>
-    <!--end popup block-->
     <header class="header">
       <div class="container">
-        <div class="navigate">
-          <nav class="nav__list">
-            <ul class="indent">
-              <li class="nav__list-item">
-                <a class="logo">
-                  <img class="logo__img" src="./images/logotip.png" alt="logo" />
-                </a>
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/logo.svg" alt="" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#info">Опис</a>
               </li>
-              <li class="nav__list-item">
-                <div class="list__img">
-                  <img
-                  class="nav__list-img"
-                  src="./images/icon_phone.svg"
-                  alt=""
-                />
-                <a class="nav__list-link link-none" href="tel:+380505333645"
-                  >+380505333645</a
-                >
-                </div>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#characteristiks">Характеристики</a>
               </li>
-              <li class="nav__list-item">
-                <div class="list__img">
-                  <img
-                  class="nav__list-img"
-                  src="./images/icon_lang.svg"
-                  alt=""
-                />
-                <a class="nav__list-link link-none" href="#">Виберіть мову</a>
-                </div>
-              </li>
-              <li class="nav__list-item">
-                <div class="list__img">
-                  <img
-                  class="nav__list-img"
-                  src="./images/icon_people.svg"
-                  alt=""
-                />
-                <a class="nav__list-link link-none" href="#">Обліковий запис</a>
-                </div>
-                
-              </li>
-            </ul>
-            <div id="humburger">&equiv;</div>
-            <ul class="nav__list-menu   row">
-              <li class="nav__list-item">
-                <a class="nav__list-link " href="#">Головна</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#">Наші проекти</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#">Послуги</a>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#price">Вартість</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <section class="content">
+    
+    <section class="bike">
       <div class="container">
-        <div class="container__inner">
-          <img class="fon__img" src="./images/fon_zam_posl.png" alt="fon" />
-          <div class="my-40">
-            <button class="konsult__btn btn btn-info btn-large" data-popup="#newsletter" type="button">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</button>
+        <div class="bike__inner">
+          <div class="bike__column">
+            <h1 class="bike__title">Xiaomi Himo C26</h1>
+            <h3 class="bike__subtitle">Електричний велосипед</h3>
+            <p class="bike__text">
+              Повна свобода пересування та надійний транспорт для подорожей
+               на будь-які відстані
+            </p>
+            <p class="bike__text">
+              HIMO C26 - це новий електровелосипед від Xiaomi, який створено
+               як для їзди містом, так і бездоріжжям. Він має потужний
+               двигун та ємний акумулятор, завдяки яким здатний
+               проїжджати на одному заряді до 100 км, що виразно вище, ніж у
+               більшість конкурентів. А великі колеса з пневматичними
+               шинами, дискові гальма, 7-швидкісна трансмісія та ергономічне
+               сидіння роблять кожну подорож набагато приємніше.
+            </p>
+            <a class="bike__link" href="#price">Замовити</a>
           </div>
-          <div class="sertifik">
-            <h1 class="title">Сертифікати та ліцензії</h1>
-            <ul class="sertifik__list">
-              <li class="sertifik__list-img">
-                <img src="./images/dozv1.png" alt="photo" />
+          <div class="bike__column bike__column-slider">
+            <div class="bike-slider">
+              <img class="bike-slider__item" src="./images/bike1.png" alt="" />
+              <img class="bike-slider__item" src="./images/bike2.png" alt="" />
+              <img class="bike-slider__item" src="./images/bike3.png" alt="" />
+              <img class="bike-slider__item" src="./images/bike5.png" alt="" />
+            </div>
+            <ul class="bike__list">
+              <li class="bike__list-item">
+                <span class="bike__list-num">до 100 км</span>
+                <span class="bike__list-text">Запас ходу</span>
               </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv1.png" alt="photo" />
+              <li class="bike__list-item">
+                <span class="bike__list-num">25 км/г</span>
+                <span class="bike__list-text">Макс швидкість</span>
               </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv2.png" alt="photo" />
+              <li class="bike__list-item">
+                <span class="bike__list-num">3 режима їзди</span>
+                <span class="bike__list-text"
+                  >механічний, гібридний, електричний</span
+                >
               </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv3.png" alt="photo" />
-              </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv4.png" alt="photo" />
-              </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv5.png" alt="photo" />
-              </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv6.png" alt="photo" />
-              </li>
-              <li class="sertifik__list-img">
-                <img src="./images/dozv7.png" alt="photo" />
-              </li>
-            </ul>
-          </div>
-          <div class="fotogalerey">
-            <h2 class="fotogalerey_title">Фотогалерея робіт</h2>
-            <ul class="fotogalerey__list">
-              <li class="fotogalerey__link">
-                <img src="./images/vognegasn.png" alt="photo" />
-                <p class="fotogalerey__text">Вогнегасники</p>
-              </li>
-              <li class="fotogalerey__link">
-                <img src="./images/proekt.png" alt="photo" />
-                <p class="fotogalerey__text">Проектування</p>
-              </li>
-              <li class="fotogalerey__link">
-                <img src="./images/fire_alarm_large 2.png" alt="photo" />
-                <p class="fotogalerey__text">Пожежна автоматика</p>
-              </li>
-              <li class="fotogalerey__link">
-                <img src="./images/moln.png" alt="photo" />
-                <p class="fotogalerey__text">Блискавкозахист</p>
+              <li class="bike__list-item">
+                <span class="bike__list-num">25 кг</span>
+                <span class="bike__list-text">вага</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
+    
+    <section class="info" id="info">
       <div class="container">
-        <div class="wrap">
-          <div class="footer__inner">
-            <h2 class="footer__title">Контактна інформація:</h2>
-            <ul class="footer__list">
-              <li class="footer__list-props">
-                <img
-                  class="footer__contacts-img"
-                  src="./images/people_contakt.svg"
-                  alt=""
-                />
-                <span>Працюємо пн-пт 8:00 до 17:00</span>
+        <div class="info__inner">
+          <img class="info__img" src="./images/info.png" alt="" />
+          <div class="info__list">
+            <div class="info__item">
+              <h4 class="info__item-title">Комфорт та безпека від HIMO</h4>
+              <p class="info__item-text">
+                Електровелосипед HIMO C26 дозволить вам швидко та з комфортом
+                 дістатися до місця роботи або навчання та не прив'язуватися до
+                 міський транспорт. Велосипед має міцну конструкцію і
+                 значним запасом ходу, щоб стати надійним транспортним
+                 засобом у сучасних міських умовах. Легка та міцна
+                 рама, 26-дюймові колеса та 7-ступінчаста система трансмісії
+                 дозволяють впевнено пересуватися не тільки асфальтованим
+                 дорожньому полотну, але і складною заміською трасою.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Міцна та легка рама</h4>
+              <p class="info__item-text">
+                Рама HIMO C26 виготовлена з міцного та легкого алюмінієвого.
+                 сплаву і відрізняється високою надійністю, стійкістю до
+                 аварійних ситуаціях, чудовою керованістю та комфортним
+                 пересуванням будь-якою дорогою.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">
+                Комбінація режимів збільшення запасу ходу
+              </h4>
+              <p class="info__item-text">
+                Електровелосипед HIMO C26 має збільшений запас ходу. Його
+                 акумулятор ємністю 10000 мАг з інтелектуальною системою
+                 оптимізації енергоспоживання дозволяє проїхати до 60 км.
+                 одному заряді як електропривода. При використанні на
+                 деяких ділянках шляху фізичної сили дальність ходу
+                 збільшується до 100 км. Максимальна швидкість пересування HIMO
+                 C26 складає 25 км/год.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Надійна трансмісія</h4>
+              <p class="info__item-text">
+                7-ступінчаста система трансмісії забезпечує плавне та точне
+                 перемикання передач, зручне управління швидкістю та надійність
+                 в роботі. Перемикаючи передачі, ви зможете з мінімальними
+                 зусиллями заїхати на гірку та безпечно скотитися вниз.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Вся інформація на РК-дисплеї</h4>
+              <p class="info__item-text">
+                Вся інформація на РК-дисплеї Великий інформативний дисплей,
+                 винесений на рульову стійку, відображає всю важливу інформацію про
+                 роботі HIMO C26 у реальному часі. Ви зможете дізнатися актуальну
+                 швидкість пересування, рівень заряду або пройдений шлях.
+                 Дисплей захищений від впливу зовнішніх факторів за стандартом
+                 IPX7 і не боїться дощу та пилу.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Зручне сідло</h4>
+              <p class="info__item-text">
+                Електровелосипед HIMO C26 укомплектований велосипедним сідлом
+                 відомого бренду Selle Royal. Тривимірна гелева структура
+                 сідла забезпечує оптимальну пружність і високий комфорт
+                 час їзди.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section class="characteristiks" id="characteristiks">
+      <div class="container">
+        <h4 class="characteristiks__head">Характеристики</h4>
+        <div class="characteristiks__inner">
+          <div class="characteristiks__items">
+            <ul class="characteristiks__list">
+              <li class="characteristiks__title">Загальні</li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Виробник</p>
+                <p class="characteristiks__desck">Xiaomi</p>
               </li>
-              <li class="footer__list-props">
-                <img
-                  class="footer__contacts-img"
-                  src="./images/home_contakt.svg"
-                  alt=""
-                />
-                <span> м.Кропивницький вул.Біляєва 2</span>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Вид</p>
+                <p class="characteristiks__desck">
+                  дорослий, дорожній, міський, електровелосипед, алюмінієва
+                   рама
+                </p>
               </li>
-              <li class="footer__list-props">
-                <img
-                  class="footer__contacts-img"
-                  src="./images/phone_Vector.svg"
-                  alt=""
-                /><span>+380505333645</span>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Колеса</p>
+                <p class="characteristiks__desck">
+                  26, подвійний алюмінієвий обід
+                </p>
               </li>
-              <li class="footer__list-props">
-                <img
-                  class="footer__contacts-img"
-                  src="./images/mail_contakt.svg"
-                  alt=""
-                /><span>ptz@gmail.com</span>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Електропривід</p>
+                <p class="characteristiks__desck">
+                  двигун 250W, разгін до 25 км/г
+                </p>
+              </li>
+            </ul>
+            <ul class="characteristiks__list">
+              <li class="characteristiks__title">амортизація</li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Тип амортизації</p>
+                <p class="characteristiks__desck">
+                  амортизуюча вилка (Hard tail)
+                </p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Вилка</p>
+                <p class="characteristiks__desck">пружинно-еластомірна</p>
+              </li>
+            </ul>
+            <ul class="characteristiks__list">
+              <li class="characteristiks__title">управління</li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Кермо</p>
+                <p class="characteristiks__desck">
+                  вигнутий, регульований підйом
+                </p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Манетки</p>
+                <p class="characteristiks__desck">
+                  тригерні одноважільні, Shimano
+                </p>
+              </li>
+            </ul>
+            <ul class="characteristiks__list">
+              <li class="characteristiks__title">характеристика трансмісії</li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Кількість швидкостей</p>
+                <p class="characteristiks__desck">7</p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Педалі</p>
+                <p class="characteristiks__desck">класичні</p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Передній перемикач</p>
+                <p class="characteristiks__desck">1 зірка</p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Задній перемикач</p>
+                <p class="characteristiks__desck">
+                  Shimano Tourney (прогулянковий)
+                </p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Касета</p>
+                <p class="characteristiks__desck">7 зірок</p>
+              </li>
+            </ul>
+            <ul class="characteristiks__list">
+              <li class="characteristiks__title">гальма</li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Передній</p>
+                <p class="characteristiks__desck">дисковий механічний</p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Задній</p>
+                <p class="characteristiks__desck">дисковий механічний</p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">
+                  Готовність до встановлення дискових
+                </p>
+                <p class="characteristiks__desck">рама, вилка, втулка</p>
+              </li>
+            </ul>
+            <ul class="characteristiks__list">
+              <li class="characteristiks__title">інше</li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Оснащення</p>
+                <p class="characteristiks__desck">
+                  електроустаткування, дзвінок
+                </p>
+              </li>
+              <li class="characteristiks__line">
+                <p class="characteristiks__name">Вага</p>
+                <p class="characteristiks__desck">25 кг</p>
               </li>
             </ul>
           </div>
-          <div class="maps">
-            <h2>Карта проїзду</h2>
-            <iframe
-              class="maps__adres"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7476.375922445822!2d32.22260680486998!3d48.5083507302291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3af2bc3d4ea0103!2z0JDQn9ChINCa0LjRgNC-0LLQvtCz0YDQsNC0!5e0!3m2!1sru!2sua!4v1673262819502!5m2!1sru!2sua"
-              width="100"
-              height="100"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <img class="characteristiks__img" src="./images/ruchka.png" alt="" />
+        </div>
+      </div>
+    </section>
+      
+    <div class="slider">
+      <div class="container">
+        <div class="slider__items">
+          <div class="slider__item">
+            <img class="slider__img" src="./images/slider1.png" alt="" />
+            <img class="slider__img" src="./images/slider2.png" alt="" />
+            <img class="slider__img" src="./images/slider3.png" alt="" />
           </div>
+        </div>
+      </div>
+    </div>
+  
+    <section class="price" id="price">
+      <div class="container">
+        <div class="price__inner">
+          <form class="form">
+            <h4 class="form__title">Замовити</h4>
+            <p class="form__text">
+              Якщо Ви бажаєте замовити велосипед, залиште свій контакт і наш
+               менеджер передзвонить вам найближчим часом
+            </p>
+            <input class="form__input-name" type="text" placeholder="имя" />
+            <input class="form__input-phone" type="tel" placeholder="телефон" />
+            <p class="form__input-text">виберіть бажаний колір</p>
+            <div class="form__label-box">
+              <label class="form__label">
+                <input class="form__input-radio" type="radio" name="radio" />
+                <div class="form__bike">
+                  <img class="form__bike-img" src="./images/grey.png" alt="" />
+                  <p class="form__bike-price"><span>33999 грн.</span></p>
+                </div>
+                <div class="form__radio-style form__radio-style--grey"></div>
+              </label>
+              <label class="form__label">
+                <input class="form__input-radio" type="radio" name="radio" />
+                <div class="form__bike">
+                  <img class="form__bike-img" src="./images/wite.png" checked/>
+                  <p class="form__bike-price"><span>32999 грн.</span></p>
+                </div>
+                <div class="form__radio-style form__radio-style--wite"></div>
+              </label>
+              <label class="form__label">
+                <input class="form__input-radio" type="radio" name="radio" />
+                <div class="form__bike">
+                  <img class="form__bike-img" src="./images/red.png" alt="" />
+                  <p class="form__bike-price"><span>34999 грн.</span></p>
+                </div>
+                <div class="form__radio-style form__radio-style--red"></div>
+              </label>
+            </div>
+            <button class="form__btn" type="submit">Замовити</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="" class="footer__link">Політика конфіденційності</a>
           <div class="footer__social">
-            <h2 class="footer__social-title">Ми в соціальних мережах</h2>
             <a class="footer__social-link" href="#">
-              <img
-                class="footer__social-img"
-                src="./images/icon_instagram.svg"
-                alt=""
-              />
+              <img class="footer__social-img" src="./images/inst.svg" alt="" />
             </a>
             <a class="footer__social-link" href="#">
-              <img
-                class="footer__social-img"
-                src="./images/icon_facebook.svg"
-                alt=""
-              />
-            </a>
-            <a class="footer__social-link" href="#">
-              <img
-                class="footer__social-img"
-                src="./images/icon_twitter.svg"
-                alt=""
-              />
+              <img class="footer__social-img" src="./images/facebook.svg" alt="" />
             </a>
           </div>
-          <div class="footer__text">
-            <h3>
-              © БУДЬ-ЯКЕ ВИКОРИСТАННЯ МАТЕРІАЛІВ ДАНОГО САЙТУ ДОПУСТИМО ТІЛЬКИ З
-              ПИСЬМОВОГО ДОЗВОЛУ КОМПАНІЇ І ПРИ НАЯВНОСТІ АКТИВНОГО ПОСИЛАННЯ НА
-              ОРИГІНАЛЬНИЙ МАТЕРІАЛ.
-            </h3>
+          <div class="footer__contacts">
+            <a class="footer__contacts-link" href="tel:+380506777777">
+              <img class="footer__contacts-img" src="./images/phone.svg" alt="" />
+              <span>+380506777777</span>
+            </a>
+            <a class="footer__contacts-link" href="mailto:elektrobikeukr@gmail.com">
+              <img class="footer__contacts-img" src="./images/mail.svg" alt="" />
+              <span>elektrobikeukr@gmail.com</span>
+            </a>
           </div>
         </div>
       </div>
     </footer>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!--	maskedinput JS-file from CDN-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<!--	Owl Carousel JS-file from CDN-->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-	<script src="./js/owl-carousel/owl.carousel.js"></script>
-
-	<script src="./js/sckript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
